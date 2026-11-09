@@ -1,0 +1,13 @@
+Oblique chiral pair certificate (P 80 = 17 + 18 + 23 + 22, four stages), small form, made by
+tools/smallcert.py on 2026-11-04.  Same directories and file names; each file keeps only the lines of
+classes that are NOT one stage move (a move keeping the other obliques as the stage requires) from a class
+with a shorter line.  The full stage is rebuilt by a breadth-first pass over those moves from the kept
+lines' states and their stage-symmetric images (certsolve does this at startup; certsolve --expand DIR writes the full form); every class then
+gets a line no longer than its original one.
+
+stage            kept lines / all lines
+none..aUbU 1ud   1,635,317 / 14,119,851 (11.6%)
+aUbU..aDbD 2ud      98,843 /  2,936,935 (3.4%)
+3ax              1,892,481 / 10,366,284 (18.3%)
+4op                295,715 /  1,508,387 (19.6%)
+size 205 MB (full: 1.5 GB).
